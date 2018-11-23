@@ -3,7 +3,15 @@
 
 正则表达式用字符串表示，是匹配字符串强有力的武器。
 
-匹配规则：
+### 语法：
+pattern：字符串(必选)  attributes：i/g/m(可选)
+- 1. 直接量语法
+var reg = /pattern/attributes
+- 2. 创建 RegExp 对象的语法 
+var reg = new RegExp(pattern, attributes);
+
+
+### 匹配规则：
 
 ```
 1.
@@ -40,3 +48,13 @@ $表示行的结束，\d$表示必须以数字结束。
 如：
 用 '\' 进行转义
 ```
+
+### 方法
+- search()  检索
+- replace() 替换
+- test()  字符串是否有匹配的文本  返回true或false 
+- exec() 
+
+### 使用
+正则对象的方法是指这样使用的： RegExp对象.方法(字符串) 
+字符串对象的方法是这样使用：字符串.方法(RegExp对象)
