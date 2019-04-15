@@ -1,0 +1,40 @@
+基本规则
+- 1.大小写敏感
+- 2.使用缩进表示层级关系
+- 3.缩进时不允许使用Tab键，只允许使用空格。
+- 4.缩进的空格数目不重要，只要相同层级的元素左侧对齐即可
+
+
+'#':  表示注释，从这个字符一直到行尾，都会被解析器忽略
+
+
+YAML 支持的数据结构有三种 
+1.对象：键值对的集合，又称为映射（mapping）/ 哈希（hashes） / 字典（dictionary）
+2.数组：一组按次序排列的值，又称为序列（sequence） / 列表（list）
+3.纯量（scalars）：单个的、不可再分的值
+
+# 数组 list: [a, b, c] 
+list:
+  - a
+  - b
+  - c 
+
+# 对象：websites:{ {YAML: yaml.org }, {Ruby: ruby-lang.org }, {Python: python.org }}
+websites:
+ YAML: yaml.org 
+ Ruby: ruby-lang.org 
+ Python: python.org 
+ Perl: use.perl.org 
+
+ # 纯量：
+
+# 字符串 { str: '这是一行字符串' } { str: '内容: 字符串' }
+# (字符串默认不使用引号表示/如果字符串之中包含空格或特殊字符，需要放在引号之中) 
+str: 这是一行字符串
+str: '内容： 字符串'
+# 布尔值
+# 整数
+# 浮点数
+# Null
+# 时间
+# 日期
